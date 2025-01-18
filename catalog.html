@@ -47,7 +47,7 @@
     </header>
     <!--Main-->
     <main class="main-inner">
-        <header> class="innter-header">
+        <header class="innter-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <!--Хлебные крошки-->
                     <ul class="breadcrumbs">
@@ -108,7 +108,89 @@
          <select class="dropdown" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
         </select>
-                    
+        <!--Карточки товаров начинаются-->
+        <ul class="product-card">
+            <!--1 карточка-->
+            <li>
+             <a class="product-card-link" href="product.html">
+                 <img class="product-card-image" src="#" alt="night-sky-with-stars">
+                 <span class="product-card-title"><b>Amara Resort & Spa</b></span>
+             </a>
+             <span class="product-card-type-for-living">Гостиница</span>
+             <span class="product-card-price">От 4000 ₽</span>
+             <button class="button" href="#">Подробнее</button>
+             <button class="button add-to-favourites">В Избранное</button>
+             <span class="product-card-rate">Рейтинг: 8,5</span>
+            </li>
+            <!--2 карточка-->
+            <li>
+                <a class="product-card-link" href="product.html">
+                    <img class="product-card-image" src="#" alt="sunrise-sky-with-rainbow">
+                    <span class="product-card-title"><b>Villas at Poco Diablo</b></span>
+                </a>
+                <span class="product-card-type-for-living">Гостиница</span>
+                <span class="product-card-price">От 5000 ₽</span>
+                <button class="button" href="#">Подробнее</button>
+                <button class="button selected">В Избранном</button>
+                <span class="product-card-rate">Рейтинг: 9,2</span>
+               </li>
+               <!--3 карточка-->
+            <li>
+                <a class="product-card-link" href="product.html">
+                    <img class="product-card-image" src="#" alt="mountain-view-at-daytime">
+                    <span class="product-card-title"><b>Desert Quail Inn</b></span>
+                </a>
+                <span class="product-card-type-for-living">Гостиница</span>
+                <span class="product-card-price">От 2500 ₽</span>
+                <button class="button" href="#">Подробнее</button>
+                <button class="button add-to-favourites">В Избранное</button>
+                <span class="product-card-rate">Рейтинг: 6,9</span>
+               </li>
+                  <!--4 карточка-->
+            <li>
+                <a class="product-card-link" href="product.html">
+                    <img class="product-card-image" src="#" alt="mountain-view-with-sky-at-night">
+                    <span class="product-card-title"><b>GreenTree Inn</b></span>
+                </a>
+                <span class="product-card-type-for-living">Гостиница</span>
+                <span class="product-card-price">От 1500 ₽</span>
+                <button class="button" href="#">Подробнее</button>
+                <button class="button add-to-favourites">В Избранное</button>
+                <span class="product-card-rate">Рейтинг: 5,0</span>
+               </li>
+        </ul>
+    <!--Пагинация--> 
+    <ul class="pagination">
+        <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+        </li>
+        <li class="pagination-item">
+            <a class="pagination-link">2</a>
+        </li>
+        <li class="pagination-item">
+            <a class="pagination-link">3</a>
+        </li>
+        <li class="pagination-item">
+            <a class="pagination-link">4</a>
+        </li>
+        <li class="pagination-item">
+            <a class="pagination-link pagination-ellipsis">...</a>
+        </li>
+        <li class="pagination-item"></li>
+            <a class="pagination-link">10</a>
+        </li>
+    </ul> 
+    <section class="contacts">
+        <h2 class="contacts-text">Подпишитесь на рассылку</h2>
+        <p class="contacts-text-explanation">Только полезная информация и никакого спама, честное бойскаутское! </p>
+        <form class="email-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p>
+             <label for="email-box">Ваш e-mail</label>
+             <input type="email" for="email-box" name="email-contact" placeholder="ivanov@mail.ru">
+            </p>
+            <button class="button" type="submit">Подписаться</button>
+        </form>
+    </section>
      </main>
     <!--Футер-->
     <footer class="page-footer"></footer>
