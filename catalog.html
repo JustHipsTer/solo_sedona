@@ -47,7 +47,7 @@
     </header>
     <!--Main-->
     <main class="main-inner">
-        <header class="innter-header">
+        <header> class="innter-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <!--Хлебные крошки-->
                     <ul class="breadcrumbs">
@@ -58,55 +58,58 @@
                             <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
                         </li>
                     </ul>
-                    <!--Сразу делаю фильтрацию отелей с чекбоксами-->
-                    <section class="catalog-hotels">
-                        <h2 class="visually-hidden">Гостиницы с фильтрами</h2>
-                        <!--Формы с фильтрацией-->
-                        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get"> 
-                            <fieldset class="catalog-filter-group">
-                                <legend class="class-filter-title">Инфраструктура:</legend>
+         </header>
+         <section class="catalog-hotels">
+             <h2 class="visually-hidden">Гостиницы с фильтрами</h2>
+            <!--Формы с фильтрацией-->
+             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get"> 
+                 <fieldset class="catalog-filter-group">
+                     <legend class="class-filter-title">Инфраструктура:</legend>
+                         <label class="control">
+                             <input class="control-input" type="checkbox" name="swimming-pool" checked>Бассейн
+                         </label>
+                         <label class="control">
+                             <input class="control-input" type="checkbox" name="parking-space" checked>Парковка
+                         </label>
+                         <label class="control">
+                             <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
+                         </label>
+                 </fieldset>
+                 <fieldset class="catalog-filter-group">
+                     <legend class="class-filter-title">Тип жилья:</legend>
+                         <ul class="catalog-filter-group">
+                             <li class="catalog-filter-item">
+                                 <label class="control">
+                                     <input class="control-input" type="radio" name="type-for-living" value="hotel" checked>Гостиница
+                                 </label>
+                             </li>
+                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="swimming-pool" checked>Бассейн
+                                     <input class="control-input" type="radio" name="type-for-living" value="hotel">Мотель
                                 </label>
+                             </li>
+                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="parking-space" checked>Парковка
+                                     <input class="control-input" type="radio" name="type-for-living" value="hotel">Апартаменты
                                 </label>
-                                <label class="control">
-                                    <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
-                                </label>
-                            </fieldset>
-                            <fieldset class="catalog-filter-group">
-                                <legend class="class-filter-title">Тип жилья:</legend>
-                                <ul class="catalog-filter-group">
-                                    <li class="catalog-filter-item">
-                                        <label class="control">
-                                            <input class="control-input" type="radio" name="type-for-living" value="hotel" checked>Гостиница
-                                        </label>
-                                    </li>
-                                    <li class="catalog-filter-item">
-                                        <label class="control">
-                                            <input class="control-input" type="radio" name="type-for-living" value="hotel">Мотель
-                                        </label>
-                                    </li>
-                                    <li class="catalog-filter-item">
-                                        <label class="control">
-                                            <input class="control-input" type="radio" name="type-for-living" value="hotel">Апартаменты
-                                        </label>
-                                    </li>
-                                </ul>
-                            </fieldset>
+                             </li>
+                         </ul>
+                 </fieldset>
                             <!--Нужно здесь вернуться к цене. Как верстать это пока не понимаю-->
-                            <fieldset class="catalog-filter-group">
-                                <legend class="class-filter-title">Стоимость, ₽:</legend>
-                            </fieldset>
-                            <button class="button" type="submit">Применить</button>
-                            <button class="button" type="reset">Сбросить</button>
-                        </form>
-                    </section>
-                </header>
-        </header>
-        
-    </main>
+                 <fieldset class="catalog-filter-group">
+                     <legend class="class-filter-title">Стоимость, ₽:</legend>
+                 </fieldset>
+                 <!--Тут еще выше допишем код-->
+                 <button class="button" type="submit">Применить</button>
+                 <button class="button" type="reset">Сбросить</button>
+             </form>
+         </section>
+         <p class="text-founded-hotel">Найдено гостиниц: 38</p>
+         <select class="dropdown" aria-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+        </select>
+                    
+     </main>
     <!--Футер-->
     <footer class="page-footer"></footer>
         <section class="footer-social">
